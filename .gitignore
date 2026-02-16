@@ -1,0 +1,35 @@
+# Data (large datasets, raw downloads, processed outputs)
+data/raw/
+data/cot/
+data/*.jsonl
+data/sdpo/
+data/quality_report.json
+data/quality_sample.md
+
+# Model weights and adapters
+adapters/
+qwen3-8b-jee-sft/
+qwen3-8b-jee-sdpo/
+qwen3-8b-jee-sdpo-mlx-4bit/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# HuggingFace cache
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

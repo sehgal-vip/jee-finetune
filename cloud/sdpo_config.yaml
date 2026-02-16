@@ -1,0 +1,87 @@
+# Phase 3c: SDPO Training Configuration
+#
+# Key SDPO settings for the verl framework.
+# Adjust paths and hyperparameters as needed for your cloud setup.
+
+# Model configuration
+model:
+  path: "./qwen3-8b-jee-sft"  # Path to the SFT model from Phase 2
+  tokenizer: "./qwen3-8b-jee-sft"
+  dtype: "bfloat16"
+  max_length: 2048
+
+# SDPO-specific settings
+sdpo:
+  loss_mode: "sdpo"
+  # JSD alpha: 0.5 = balanced between forward and reverse KL
+  # Lower alpha -> more mode-seeking (forward KL dominant)
+  # Higher alpha -> more mode-covering (reverse KL dominant)
+  alpha: 0.5
+  # Teacher regularization via EMA (exponential moving average)
+  teacher_regularization: "ema"
+  teacher_update_rate: 0.05
+  # Top-k logits for distillation (reduces memory, keeps important tokens)
+  distillation_topk: 100
+
+# RL rollout settings
+rollout:
+  # Number of rollouts per prompt
+  num_rollouts: 4
+  # Temperature for generation during rollouts
+  temperature: 0.7
+  top_p: 0.95
+  max_new_tokens: 1024
+  # Use vLLM for fast rollout generation
+  engine: "vllm"
+
+# Training hyperparameters
+training:
+  num_epochs: 3
+  batch_size: 8
+  gradient_accumulation_steps: 4
+  learning_rate: 5.0e-6
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  max_grad_norm: 1.0
+  # LoRA for memory efficiency on single GPU
+  use_lora: true
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  lora_target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+# Data paths (relative to working directory on cloud)
+data:
+  rl_prompts: "./sdpo_data/rl_prompts.jsonl"
+  eval_prompts: "./sdpo_data/eval_prompts.jsonl"
+  judge_config: "./sdpo_data/judge_config.json"
+
+# Judge settings
+judge:
+  model: "claude-opus-4-6-20250929"
+  max_tokens: 2048
+  cache_path: "./judge_cache.jsonl"
+
+# Logging
+logging:
+  use_wandb: true
+  project: "jee-sdpo"
+  run_name: "qwen3-8b-jee-sdpo-v1"
+  log_every: 10
+
+# Checkpointing
+checkpoint:
+  save_dir: "./checkpoints"
+  save_every: 50
+  keep_last: 3
+
+# Output
+output:
+  save_path: "./qwen3-8b-jee-sdpo"
