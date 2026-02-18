@@ -5,12 +5,21 @@ data/*.jsonl
 data/sdpo/
 data/quality_report.json
 data/quality_sample.md
+data/backup/
+data/batches/*.jsonl
+data/opus_queue.jsonl
+data/opus_solutions.jsonl
+data/opus_failures.jsonl
 
-# Model weights and adapters
+# Model weights and adapters (large binary files)
 adapters/
+adapters_v1_corrupted/*.safetensors
 qwen3-8b-jee-sft/
 qwen3-8b-jee-sdpo/
 qwen3-8b-jee-sdpo-mlx-4bit/
+
+# SDPO upload staging (data files already on HF)
+sdpo_upload/sdpo_data/
 
 # Python
 __pycache__/

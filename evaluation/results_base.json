@@ -1,19 +1,19 @@
 {
-  "model_name": "sft",
+  "model_name": "base",
   "total": 200,
-  "correct": 90,
+  "correct": 78,
   "by_subject": {
     "Mathematics": {
       "total": 66,
-      "correct": 36
+      "correct": 24
     },
     "Physics": {
       "total": 64,
-      "correct": 19
+      "correct": 22
     },
     "Chemistry": {
       "total": 70,
-      "correct": 35
+      "correct": 32
     }
   },
   "by_type": {},
@@ -21,58 +21,58 @@
     {
       "question": "Let\n\\[z = \\frac{-\\sqrt{3} + i}{2}.\\]Compute $z^6.$",
       "ground_truth": "-1",
-      "extracted_answer": "-1",
+      "extracted_answer": "1",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1540
+      "response_length": 5853
     },
     {
       "question": "A small ball starts from rest and slides down a smooth inclined track AB with uniform acceleration, then enters a horizontal track BC and rolls at a constant speed. Afterward, it relies on inertia to ",
       "ground_truth": "[\"300^{\\\\circ",
-      "extracted_answer": "[\"$0\\mathrm{m/s}$\"]",
+      "extracted_answer": "to be derived from that",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 2185
+      "response_length": 9308
     },
     {
       "question": "Match List I with List II :     List-I\n\t\t\tElements    \nList-II Properties\n    (a) Li (i) Poor water solubility of I-salt   (b) Na (ii) Most abundant element in cell fluid   (c) K (iii) Bicarbonate sal",
       "ground_truth": "A",
-      "extracted_answer": "B",
-      "is_correct": false,
+      "extracted_answer": "that (ii) is sodium",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 1047
+      "response_length": 8571
     },
     {
       "question": "A sample of nitrogen gas has a volume of 32.4 L at 20°C. The gas is heated to 220°C at constant pressure. What is the final volume of nitrogen?",
       "ground_truth": "54.52 \\text{ L",
-      "extracted_answer": "54.6",
-      "is_correct": true,
+      "extracted_answer": "slightly different",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 568
+      "response_length": 4727
     },
     {
       "question": "Dinitrogen and dihydrogen react with each other to produce ammonia according to the following chemical equation:\n\\(\\mathrm{N}_2(\\mathrm{~g})+\\mathrm{H}_2(\\mathrm{~g}) \\longrightarrow 2 \\mathrm{NH}_3(\\",
       "ground_truth": "\\(=571.4 \\mathrm{~g}\\)",
-      "extracted_answer": "567.3 \\mathrm{g}",
-      "is_correct": true,
+      "extracted_answer": "",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 2483
+      "response_length": 8294
     },
     {
       "question": "What is the relationship between the structures below ?\n\n(A) Structural isomers\n(B) Diastereomers\n(C) Enantiomers\n(D) Same compound",
       "ground_truth": "C",
-      "extracted_answer": "A",
+      "extracted_answer": "diastereomers",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 361
+      "response_length": 9484
     },
     {
       "question": "Find all $(x, y, z)$ such that:\n\n$$\n\\left\\{\\begin{array}{c}\nx+y+z=\\frac{1}{x}+\\frac{1}{y}+{ }^{\\prime} \\frac{1}{z} \\\\\nx^{2}+y^{2}+z^{2}=\\frac{1}{x^{2}}+\\frac{1}{y^{2}}+\\frac{1}{z^{2}}\n\\end{array}\\righ",
       "ground_truth": "(x,y,z)\\in{(e,,\\frac{1",
-      "extracted_answer": "(x, y, z) = (1, 1, 1), (1, 1, -1), (1, -1, 1), (1, -1, -1), (-1, 1, 1), (-1, 1, -1), (-1, -1, 1), (-1, -1, -1)",
+      "extracted_answer": "1",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 2817
+      "response_length": 5889
     },
     {
       "question": "Let \\(ABCD\\) be a quadrilateral circumscribed about a circle, whose interior and exterior angles are at least \\(60\\) degrees. Prove that\n$$\n\\frac{1}{3}\\left|AB^{3} - AD^{3}\\right| \\leq \\left|BC^{3} - ",
@@ -80,103 +80,103 @@
       "extracted_answer": "3",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 5340
+      "response_length": 6694
     },
     {
       "question": "11. Given $f(x)=\\frac{a x+1}{3 x-1}$, and the equation $f(x)=-4 x+8$ has two distinct positive roots, one of which is three times the other. Let the first $n$ terms of the arithmetic sequences $\\left\\",
       "ground_truth": "\\frac{5",
-      "extracted_answer": "\\frac{4}{3}",
+      "extracted_answer": "2",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 4229
+      "response_length": 5781
     },
     {
       "question": "Let $e(x)$ be an even function, and let $o(x)$ be an odd function, such that\n\\[e(x) + o(x) = \\frac{6}{x + 2} + x^2 + 2^x\\]for all real numbers $x \\neq -2.$  Find $o(1).$",
       "ground_truth": "-\\frac{5",
-      "extracted_answer": "-\\frac{5}{4}",
-      "is_correct": true,
+      "extracted_answer": "2",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 2075
+      "response_length": 5603
     },
     {
       "question": "For the $\\mathrm{H}_2$ ground electronic state, $D_0=4.4781 \\mathrm{eV}$. Find $\\Delta H_0^{\\circ}$ for $\\mathrm{H}_2(g) \\rightarrow 2 \\mathrm{H}(g)$ in $\\mathrm{kJ} / \\mathrm{mol}$",
       "ground_truth": "$\\boxed{432.07}$",
-      "extracted_answer": "-447.81",
+      "extracted_answer": "4.4781",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 347
+      "response_length": 5659
     },
     {
       "question": "Acetylene can be obtained by the reaction?\n\n(A) HCOOKâElectrolysisÂ Â Â Â\n(B) CHI3+Agâ     â\n(C) CH3CH2OHâConc.H2SO4Â Â 443Â K\n(D) Be2C+H2Oâ",
       "ground_truth": "B",
-      "extracted_answer": "(D) Be2C+H2Oâ",
-      "is_correct": true,
+      "extracted_answer": "D",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1624
+      "response_length": 7199
     },
     {
       "question": "Find all the solutions to\n\\[\\sqrt[3]{3 - x} + \\sqrt{x - 2} = 1.\\]",
       "ground_truth": "3, 2, 11",
-      "extracted_answer": "2, 3, 11",
-      "is_correct": false,
+      "extracted_answer": "3",
+      "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 2242
+      "response_length": 5632
     },
     {
       "question": "Two containers of equal volume contain the same gas at the pressure p1  and  p2 and absolute temperatures T1  and  T2 respectively. On joining the vessels, the gas reaches a common pressure p and a co",
       "ground_truth": "C",
-      "extracted_answer": "B",
+      "extracted_answer": "D",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 349
+      "response_length": 8808
     },
     {
       "question": "After a gymnastics meet, each gymnast shook hands once with every gymnast on every team (except herself). Afterwards, a coach came down and only shook hands with each gymnast from her own team. There ",
       "ground_truth": "5",
-      "extracted_answer": "19",
+      "extracted_answer": "281.",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1808
+      "response_length": 8476
     },
     {
       "question": "Let set $A = \\{x | x > 2\\}$. If $m = \\ln e^e$ (where $e$ is the base of the natural logarithm), then (　　)\n\nA: $\\emptyset \\in A$\n\nB: $m \\notin A$\n\nC: $m \\in A$\n\nD: $A \\subseteq \\{x | x > m\\}$",
       "ground_truth": "\\text{C",
-      "extracted_answer": "\\text{C}",
+      "extracted_answer": "C",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1749
+      "response_length": 6632
     },
     {
       "question": "Acetone on treatment with     CH 3  âMgâI  and on further hydrolysis gives\n\n(A) Isopropyl alcohol\n(B) Primary alcohol\n(C) Acetic acid\n(D) 2-methyl 2-propanol",
       "ground_truth": "D",
-      "extracted_answer": "D",
-      "is_correct": true,
+      "extracted_answer": "",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 754
+      "response_length": 7129
     },
     {
       "question": "A rectangular block, with face lengths   a = 35 cm  and b = 45   \n cm  , is to be suspended on a thin horizontal rod running through a narrow hole in the block. The block is then to be set swinging ab",
       "ground_truth": "$\\boxed{The period vs. distance plot is a curve with a minimum.}$",
-      "extracted_answer": "",
+      "extracted_answer": "45",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 7798
+      "response_length": 8192
     },
     {
       "question": "As shown in the figure, a child with a mass of $30\\mathrm{kg}$ is sitting on a sled with a mass of $10\\mathrm{kg}$. An adult pulls the sled with a force of $100N$ at an angle of $37^{\\circ}$ above the",
       "ground_truth": "[\"$340\\mathrm{N",
-      "extracted_answer": "$0\\mathrm{m}/\\mathrm{s}^2$",
+      "extracted_answer": "80",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 6783
+      "response_length": 8689
     },
     {
       "question": "What would be the volume of 6.00 g of helium gas at STP?",
       "ground_truth": "33.6 \\text{ L",
-      "extracted_answer": "33.6 \\text{ L}",
+      "extracted_answer": "33",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 965
+      "response_length": 5488
     },
     {
       "question": "Consider the following antibiotics \n\n(i) Erythromycin\n\n(ii) Ofloxacin\n\n(iii) Chloramphenicol\n\n(iv) Penicillin\n\nThe pair of bactericidal antibodies is\n\n(A) i-iii\n(B) ii-iv\n(C) ii-v\n(D) i-iv",
@@ -184,31 +184,31 @@
       "extracted_answer": "B",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 339
+      "response_length": 4936
     },
     {
       "question": "A certain electric dipole is placed in a uniform electric field of magnitude 40 N/C \n . Figure 22-63 gives the magnitude t of the torque on the dipole versus the anglebetween field and the dipole mome",
       "ground_truth": "$\\boxed{The magnitude of the electric dipole moment is 2.5 x 10^-30 C.m}$",
-      "extracted_answer": "0.25",
+      "extracted_answer": "p = τ_s / E",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 342
+      "response_length": 7326
     },
     {
       "question": "Consider three international projects running simultaneously over a 12-month period with different local currencies. \n\nProject A, based in the US, has a total budget of $42,000 (USD) and after 8 month",
       "ground_truth": "53.73\\%",
-      "extracted_answer": "Total Budget: $134,800, Total Expenses: $74,300, Average Percentage Spent: 53.76%",
+      "extracted_answer": "A",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 2771
+      "response_length": 5024
     },
     {
       "question": "A thin uniform rod of length 2 m, cross sectional area A and density d is rotated about an axis passing through the centre and perpendicular to its length with angular velocity ω. If value of ω in ter",
       "ground_truth": "Thus, the value of α=3.",
-      "extracted_answer": "13",
+      "extracted_answer": "",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 3309
+      "response_length": 8113
     },
     {
       "question": "\"Modulo $m$ graph paper\" consists of a grid of $m^2$ points, representing all pairs of integer residues $(x,y)$ where $0\\le x<m$. To graph a congruence on modulo $m$ graph paper, we mark every point $",
@@ -216,31 +216,31 @@
       "extracted_answer": "10",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1896
+      "response_length": 5409
     },
     {
       "question": "Determine the number of permutations that can be made using 3 green balls, 2 red balls, 2 white balls, and 3 yellow balls such that no two yellow balls are adjacent.",
       "ground_truth": "11760",
-      "extracted_answer": "11760",
+      "extracted_answer": "7",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 2511
+      "response_length": 7571
     },
     {
       "question": ".. DATA Your physics study partner tells you that the width of the central bright band in a single-slit diffraction pattern is inversely proportional to the width of the slit. This means that the widt",
       "ground_truth": "$\\boxed{For smaller slit widths (a), the product aw is not constant because the small angle approximation fails; for larger a, aw is approximately constant at 1.6e-6 m^2.}$",
-      "extracted_answer": "aw",
-      "is_correct": true,
+      "extracted_answer": "0.",
+      "is_correct": false,
       "subject": "Physics",
-      "response_length": 1127
+      "response_length": 5846
     },
     {
       "question": "Given the functions $f(x)=e^{x}$ and $g(x)=1+x$.\n- $(1)$ Find the minimum value of the function $h(x)=f(x)-g(x)$;\n- $(2)$ If $k > 1$, prove that when $|x| < k$, $\\left[f\\left( \\frac {x}{k}\\right)g\\lef",
       "ground_truth": "0",
-      "extracted_answer": "0",
-      "is_correct": true,
+      "extracted_answer": "1",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1031
+      "response_length": 6218
     },
     {
       "question": "Provide an example of a biological process where osmosis helps in maintaining the balance of water and solutes.",
@@ -248,103 +248,103 @@
       "extracted_answer": "",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1279
+      "response_length": 4805
     },
     {
       "question": "For designing a voltmeter of range 50 V and an ammeter of range 10 mA using a galvanometer which has a coil of resistance 54 Ω showing a full scale deflection for 1 mA as in figure.\n\n(A) for voltmeter",
       "ground_truth": "A",
-      "extracted_answer": "C",
-      "is_correct": false,
+      "extracted_answer": "A",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 1415
+      "response_length": 6858
     },
     {
       "question": "We have a right triangle $\\triangle ABC$ where the legs $AB$ and $BC$ have lengths $6$ and $3\\sqrt{3},$ respectively. Medians $AM$ and $CN$ meet at point $P.$ What is the length of $CP$?",
       "ground_truth": "4",
-      "extracted_answer": "3\\sqrt{3}",
+      "extracted_answer": "2",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1935
+      "response_length": 6123
     },
     {
       "question": "With the increasing prevalence of smartphone usage, some people often look down at their phones while driving. However, using a phone while driving is a dangerous behavior that can easily lead to traf",
       "ground_truth": "[\"$2.5\\mathrm{m/s^2",
-      "extracted_answer": "d_{\\text{taxi, reaction}} = 7.5 \\, \\mathrm{m}",
+      "extracted_answer": "-2.5",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 3790
+      "response_length": 8611
     },
     {
       "question": "If a school year is denoted as \"2024-25,\" what is the duration of this school year?",
       "ground_truth": "$\\boxed{The school year denoted as \"2024-25\" typically starts in the fall of 2024 and ends in the spring or summer of 2025, covering approximately 9 to 10 months.}$",
-      "extracted_answer": "$9$ months",
-      "is_correct": false,
+      "extracted_answer": "The duration of the 2024-25 school year is **9 months**.",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 607
+      "response_length": 3802
     },
     {
       "question": "The polynomial\n$$ h(x) = x^3 - x^2 - (m^2 + m + 1) x + 2m^2 + 5m + 3 $$ \nis divisible by \\( x-3 \\) and all of its zeros are integers. Find all possible values of \\( m \\).",
       "ground_truth": "-3",
-      "extracted_answer": "\\text{No solution}",
-      "is_correct": false,
+      "extracted_answer": "3",
+      "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1928
+      "response_length": 6383
     },
     {
       "question": "When \\(n-p-n\\) transistor is used as an amplifier  \n(A) electrons move from base to collector.  \n(B) holes move from collector to base.  \n(C) electrons move from collector to base.  \n(D) holes move fr",
       "ground_truth": "A",
-      "extracted_answer": "C",
+      "extracted_answer": "D",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 597
+      "response_length": 9800
     },
     {
       "question": "One end of a light spring of natural length d and spring constant k is fixed on a rigid wall and the other is fixed to a smooth ring of mass m which can slide without friction in a vertical rod fixed ",
       "ground_truth": "A",
-      "extracted_answer": "0",
+      "extracted_answer": "3",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 7612
+      "response_length": 8477
     },
     {
       "question": "The magnetic moment of the complex anion $\\left[\\mathrm{Cr}(\\mathrm{NO})\\left(\\mathrm{NH}_3\\right)(\\mathrm{CN})_4\\right]^{2-}$ is :\n\n(A) $5.91 \\mathrm{BM}$\n(B) $3.87 \\mathrm{BM}$\n(C) $1.73 \\mathrm{BM}",
       "ground_truth": "D",
-      "extracted_answer": "A",
+      "extracted_answer": "6",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1225
+      "response_length": 7577
     },
     {
       "question": "Which of the following is a primary halide\n\n(A) Isopropyl iodide\n(B) Secondary butyl iodide\n(C) Tertiary butyl bromide\n(D) Neo hexyl chloride",
       "ground_truth": "D",
-      "extracted_answer": "A",
+      "extracted_answer": "B",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 320
+      "response_length": 8210
     },
     {
       "question": "How much energy is required to convert 100.0 g of water at 20.0 °C completely to steam at 100.0 °C?",
       "ground_truth": "259.47 \\text{ kJ",
-      "extracted_answer": "259472 \\, \\text{J}",
+      "extracted_answer": "probably expected in joules",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1413
+      "response_length": 6116
     },
     {
       "question": "Determine $d-r$ if $r$ is the remainder when each of the numbers $2023$, $2459$, and $3571$ is divided by $d$, where $d$ is an integer greater than $1$.\nA) 0\nB) 1\nC) 2\nD) 3\nE) 4",
       "ground_truth": "\\textbf{(B)",
-      "extracted_answer": "\\text{B}",
+      "extracted_answer": "B) 1",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1950
+      "response_length": 5182
     },
     {
       "question": "Which one of the following is a water soluble vitamin, that is not excreted easily?\n\n(A) Vitamin B2\n(B) Vitamin B1\n(C) Vitamin B6\n(D) Vitamin B12",
       "ground_truth": "D",
-      "extracted_answer": "Vitamin B12",
-      "is_correct": false,
+      "extracted_answer": "D",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 343
+      "response_length": 3264
     },
     {
       "question": "Which of the following polymer is a polyamide ?\n\n(A) Terylene\n(B) Nylon\n(C) Rubber\n(D) Vulcanised rubber",
@@ -352,39 +352,39 @@
       "extracted_answer": "B",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 320
+      "response_length": 4328
     },
     {
       "question": "A sample of carbon dioxide gas at a pressure of 1.07 atm and a temperature of 166 °C, occupies a volume of 686 mL. If the gas is heated at constant pressure until its volume is 913 mL, the temperature",
       "ground_truth": "$\\boxed{311°C}$",
-      "extracted_answer": "324 °C",
+      "extracted_answer": "21",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 741
+      "response_length": 5333
     },
     {
       "question": "What is the oxidation number of Cl in Ba(ClO2)2?",
       "ground_truth": "+3",
-      "extracted_answer": "6",
-      "is_correct": false,
+      "extracted_answer": "+3",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 1350
+      "response_length": 5521
     },
     {
       "question": "Let $L_{1}=1, L_{2}=3$, and $L_{n+2}=L_{n+1}+L_{n}$ for $n\\geq 1$. How many terms in the sequence $L_{1}, L_{2}, L_{3},...,L_{2023}$ are even?\n$\\textbf{(A) }673\\qquad\\textbf{(B) }1011\\qquad\\textbf{(C)",
       "ground_truth": "\\textbf{(E)",
-      "extracted_answer": "\\textbf{(E) }674",
-      "is_correct": true,
+      "extracted_answer": "3",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 2043
+      "response_length": 5482
     },
     {
       "question": "Let $C_{1}$ be the circle of radius 1 with center at the origin. Let $C_{2}$ be the circle of radius $r$ with center at the point $A=(4,1)$, where $1<r<3$. Two distinct common tangents $P Q$ and $S T$",
       "ground_truth": "2",
-      "extracted_answer": "2",
-      "is_correct": true,
+      "extracted_answer": "1.",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3347
+      "response_length": 8245
     },
     {
       "question": "The oxidation state of $\\mathrm{Cr}$ in $\\mathrm{Cr}_2 \\mathrm{O}_7^{2-}$ is\n\n(A) $4$\n(B) $-6$\n(C) $6$\n(D) $-2$",
@@ -392,15 +392,15 @@
       "extracted_answer": "C",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 375
+      "response_length": 3512
     },
     {
       "question": "Two particles of equal mass have velocities v→1=4i^ ms−1 and v→2=4j^  ms−1. First particle has an acceleration a→1=5i^+5j^  ms−2, while the acceleration of the other particle is zero. The centre of ma",
       "ground_truth": "A",
-      "extracted_answer": "(A) Straight line",
+      "extracted_answer": "A",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 1359
+      "response_length": 6985
     },
     {
       "question": "What is the oxidation numbers of (a) N in #NH_4^+#?",
@@ -408,39 +408,39 @@
       "extracted_answer": "-3",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 529
+      "response_length": 4491
     },
     {
       "question": "A lecture hall has rows of connected desks, with each row seating 6 people. Students can only exit the hall from the ends of the desks. During an exam, if a student sitting in the middle wants to subm",
       "ground_truth": "\\frac{21",
-      "extracted_answer": "3",
+      "extracted_answer": "4",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 2064
+      "response_length": 9401
     },
     {
       "question": "Given 22 points on a plane, with no three points being collinear, prove that it is possible to divide them into 11 pairs such that the 11 line segments connecting each pair have at least 5 different i",
       "ground_truth": "\\(\\blacksquare\\)",
-      "extracted_answer": "True",
+      "extracted_answer": "22",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3041
+      "response_length": 9561
     },
     {
       "question": "Sequence $A$ is a geometric sequence. Sequence $B$ is an arithmetic sequence. Each sequence stops as soon as one of its terms is greater than $300.$ What is the least positive difference between a num",
       "ground_truth": "4",
-      "extracted_answer": "4",
-      "is_correct": true,
+      "extracted_answer": "16.",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 2243
+      "response_length": 5535
     },
     {
       "question": "Provide an example of a stoichiometric calculation using the given reaction: CHâ‚„(g) + 2Oâ‚‚(g) â†’ COâ‚‚(g) + 2Hâ‚‚O(g).",
       "ground_truth": "$\\boxed{If 16 grams of CHâ‚„ reacts with excess Oâ‚‚, calculate the mass of COâ‚‚ produced.}$",
-      "extracted_answer": "CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(g)",
+      "extracted_answer": "approximately 44",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 837
+      "response_length": 6947
     },
     {
       "question": "Given the function $f(x)=ax^{3}+3x^{2}+2$, if $f'(-1)=4$, then the value of $a$ is (　).\n\nA: $\\dfrac {19}{3}$\n\nB: $\\dfrac {16}{3}$\n\nC: $\\dfrac {13}{3}$\n\nD: $\\dfrac {10}{3}$",
@@ -448,47 +448,47 @@
       "extracted_answer": "D",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 762
+      "response_length": 5883
     },
     {
       "question": "To reduce 16 ounces of a 25% solution of antiseptic to a 10% solution, how much distilled water should a nurse add?",
       "ground_truth": "24 \\text{ ounces",
-      "extracted_answer": "8",
-      "is_correct": false,
+      "extracted_answer": "24",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 1404
+      "response_length": 5427
     },
     {
       "question": "The population of a certain city was 117,751 on January 1, 1950. The average annual increase due to relocation (moving in and moving out) is estimated at 640 people, while the natural growth rate is $",
       "ground_truth": "135140",
-      "extracted_answer": "142,751",
+      "extracted_answer": "1.0087",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 387
+      "response_length": 6521
     },
     {
       "question": "Let $S$ be the set of all twice differentiable functions $f$ from $\\mathbb{R}$ to $\\mathbb{R}$ such that $\\frac{d^{2} f}{d x^{2}}(x)>0$ for all $x \\in(-1,1)$. For $f \\in S$, let $X_{f}$ be the number ",
       "ground_truth": "ABC",
-      "extracted_answer": "C",
+      "extracted_answer": "B",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 4542
+      "response_length": 7091
     },
     {
       "question": "When 168 joules of heat is added 4 grams of water at 283 K, what is the resulting temperature?",
       "ground_truth": "293.05 \\text{ K",
-      "extracted_answer": "293 \\text{ K}",
-      "is_correct": true,
+      "extracted_answer": "19.85",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1129
+      "response_length": 5979
     },
     {
       "question": "Provide an example of a musical instrument that exhibits resonance due to wave propagation in two dimensions.",
       "ground_truth": "$\\boxed{A tabla is an example of a musical instrument that exhibits resonance due to wave propagation in two dimensions. The circular membrane of the tabla, clamped at the circumference, vibrates at its natural frequencies, creating resonant sounds.}$",
-      "extracted_answer": "Drum",
+      "extracted_answer": "the drum",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 1323
+      "response_length": 5915
     },
     {
       "question": "In the nuclear reaction, \\({ }_6^{11} \\mathrm{C} \\rightarrow{ }_5^{11} \\mathrm{~B}+\\beta+X, X\\) stands for\n\n(A) a neutron\n(B) an electron\n(C) a neutrino\n(D) an anti-neutrino",
@@ -496,7 +496,7 @@
       "extracted_answer": "C",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 1262
+      "response_length": 8036
     },
     {
       "question": "A block is lying at rest inside a bus. The maximum acceleration of the bus such that the block remain stationary (the static friction coefficient $=02$, acceleration due to gravity $=10 \\mathrm{~ms}^{",
@@ -504,127 +504,127 @@
       "extracted_answer": "D",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 1380
+      "response_length": 7840
     },
     {
       "question": "Given the sequence {a<sub>n</sub>}, if a<sub>1</sub>+2a<sub>2</sub>+…+na<sub>n</sub>\\=2n, then the sum of the first n terms of the sequence {a<sub>n</sub>a<sub>n+1</sub>} is ___.",
       "ground_truth": "T_{n",
-      "extracted_answer": "\\frac{4n}{n+1}",
+      "extracted_answer": "\\dfrac{4n}{n+1}",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1909
+      "response_length": 5149
     },
     {
       "question": "Six points on a circle are numbered 1, 2, 3, 4, 5, and 6 in that order clockwise. A bug jumps in a clockwise direction from one point to another around the circle. If it is on an odd-numbered point, i",
       "ground_truth": "\\mathrm{A \\ 1",
-      "extracted_answer": "",
+      "extracted_answer": "2",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 7824
+      "response_length": 6357
     },
     {
       "question": "## Problem Statement\n\nCalculate the limit of the function:\n\n$$\n\\lim _{x \\rightarrow 1}\\left(\\frac{2-x}{x}\\right)^{\\frac{1}{\\ln (2-x)}}\n$$",
       "ground_truth": "e^2",
-      "extracted_answer": "e^2",
-      "is_correct": true,
+      "extracted_answer": "1",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1983
+      "response_length": 6524
     },
     {
       "question": "Find the number of real solutions of the equation\n\\[\\frac{x}{100} = \\sin x.\\]",
       "ground_truth": "63",
-      "extracted_answer": "64",
-      "is_correct": true,
+      "extracted_answer": "0",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3533
+      "response_length": 6774
     },
     {
       "question": "The volume strength of 1M H2O2 is:\n\n(Molar mass of H2O2=34 g mol-1 )\n\n(A) 5.6\n(B) 22.4\n(C) 11.2\n(D) 16.8",
       "ground_truth": "C",
-      "extracted_answer": "C",
+      "extracted_answer": "(C) 11",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 881
+      "response_length": 7013
     },
     {
       "question": "Monochromatic light of wavelength 592 nm from a distant source passes through a slit that is 0.0290 mm wide. In the resulting diffraction pattern, the intensity at the center of the central maximum= 0",
       "ground_truth": "$\\boxed{Intensity at 1.20° is 2.54 x 10^-8 W/m^2}$",
-      "extracted_answer": "$0",
-      "is_correct": false,
+      "extracted_answer": "1.20",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 2348
+      "response_length": 6459
     },
     {
       "question": "The Absent-Minded Scientist boards a bus with \\( n \\) seats. All \\( n \\) tickets have been sold to \\( n \\) passengers. The Absent-Minded Scientist is the first to enter the bus and, without looking at",
       "ground_truth": "\\frac{1",
-      "extracted_answer": "\\frac{1}{2}",
+      "extracted_answer": "1/2, but I need to verify that",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1263
+      "response_length": 8726
     },
     {
       "question": "Six identical conducting rods are joined as shown in figure. Points A and D are maintained at $200^{\\circ} \\mathrm{C}$ and $20^{\\circ} \\mathrm{C}$ respectively. The temperature of junction B will be\n\n",
       "ground_truth": "C",
-      "extracted_answer": "C",
-      "is_correct": true,
+      "extracted_answer": "",
+      "is_correct": false,
       "subject": "Physics",
-      "response_length": 2206
+      "response_length": 9479
     },
     {
       "question": "A spherical balloon of 21 cm diameter is to be filled up with H2 at NTP from cylinder containing the gas at 20 atm at 27oC. The cylinder can hold 2.82 litre of water a NTP. Calculate the number of bal",
       "ground_truth": "Total volume of H2 at NTP = volume of 'n' balloons + volume of cylinder",
-      "extracted_answer": "1",
+      "extracted_answer": "0.0001157625",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1533
+      "response_length": 4615
     },
     {
       "question": "Let $A = (1,1)$ be a point on the parabola $y = x^2.$  The normal to the parabola at $A$ is drawn, intersecting the parabola again at $B.$  Find $B.$\n\n[asy]\nunitsize(1 cm);\n\npair A, B;\n\nA = (1,1);\nB =",
       "ground_truth": "\\left( -\\frac{3",
-      "extracted_answer": "\\left(-\\frac{3}{2}, \\frac{9}{4}\\right)",
-      "is_correct": true,
+      "extracted_answer": "\\left( -\\dfrac{3}{2}, \\dfrac{9}{4} \\right)",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 2459
+      "response_length": 6109
     },
     {
       "question": "Which one of the following order represents the correct sequence of the increasing basic nature of the given oxides ?\n\n(A) $\\mathrm{MgO} &lt; \\mathrm{K}_2 \\mathrm{O} &lt; \\mathrm{Al}_2 \\mathrm{O}_3 &l",
       "ground_truth": "D",
-      "extracted_answer": "B",
-      "is_correct": false,
+      "extracted_answer": "D",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 440
+      "response_length": 7313
     },
     {
       "question": "An 8.00-kg block of ice, released from rest at the top of a 1.50-m long frictionless ramp, slides downhill, reaching a speed of 2.50 m/s at the bottom. (a) What is the angle between the ramp and the h",
       "ground_truth": "$\\boxed{The angle between the ramp and the horizontal is 12.3 degrees.}$",
-      "extracted_answer": "12.3^\\circ",
-      "is_correct": true,
+      "extracted_answer": "approximately 12",
+      "is_correct": false,
       "subject": "Physics",
-      "response_length": 1341
+      "response_length": 5839
     },
     {
       "question": "In the acute triangle \\( ABC \\), perpendiculars \\( DM \\) and \\( DN \\) are drawn from the foot \\( D \\) of the altitude \\( BD \\) to the sides \\( AB \\) and \\( BC \\), respectively. It is known that \\( MN ",
       "ground_truth": "\\frac{a",
-      "extracted_answer": "90^\\circ",
+      "extracted_answer": "0",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3580
+      "response_length": 6704
     },
     {
       "question": "An ordinary egg can be approximated as a \\(5.5-\\mathrm{cm}-\\) diameter sphere\nwhose properties are roughly \\(k=0.6 \\mathrm{~W} / \\mathrm{m} \\cdot \\mathrm{K}\\)\nand \\(\\alpha=0.14 \\times 10^{-6} \\mathrm{",
       "ground_truth": "$\\boxed{Time for the center of the egg to reach 70°C is 1568.13 s}$",
-      "extracted_answer": "$0",
+      "extracted_answer": "1.",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 2349
+      "response_length": 7207
     },
     {
       "question": "Given a regular polygon with 200 sides, how many triangles can be formed with vertices that are also vertices of this polygon?",
       "ground_truth": "1313400",
-      "extracted_answer": "1313400",
-      "is_correct": true,
+      "extracted_answer": "just C(200, 3)",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1082
+      "response_length": 6766
     },
     {
       "question": "The first IE1 and second IE2 ionization energies (kJ/mol) of a few elements designated by Roman numerals are given below. Which of these would be an alkali metal?\n\n(A) IE1   IE2      I 2372 5251\n(B) I",
@@ -632,111 +632,111 @@
       "extracted_answer": "",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 40
+      "response_length": 7163
     },
     {
       "question": "Consider the Hamiltonian \\(H=-(e B / m c) \\hat{S}_{x}=\\omega \\hat{S}_{x}\\).  \n(a) Write down the Heisenberg equations of motion for the time-dependent\noperators \\(\\hat{S}_{x}(t), \\hat{S}_{y}(t)\\), and",
       "ground_truth": "$\\boxed{$\\hat{S}_{x}(t) = \\hat{S}_{x}(0)$}$",
-      "extracted_answer": "0",
-      "is_correct": true,
+      "extracted_answer": "C",
+      "is_correct": false,
       "subject": "Physics",
-      "response_length": 3992
+      "response_length": 6925
     },
     {
       "question": "What is monomer for Orlon polymer\n\n(A) Styrene\n(B) Tetrafluoro ethylene\n(C) Vinyl chloride\n(D) Acrylonitrile",
       "ground_truth": "D",
-      "extracted_answer": "(D) Acrylonitrile",
+      "extracted_answer": "D",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 679
+      "response_length": 3090
     },
     {
       "question": "In the mixture of Na2CO3+NaHCO3 volume of HCl required is x mL with phenolphthalein indicator and y mL with methyl orange indicator in the same titration. Hence volume of HCl for complete reaction of ",
       "ground_truth": "A",
-      "extracted_answer": "D",
+      "extracted_answer": "",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 631
+      "response_length": 8343
     },
     {
       "question": "Given the sets $A=\\{x\\mid 0 < ax+1\\leqslant 5\\}$ and $B=\\{x\\mid -\\frac{1}{2} < x\\leqslant 2\\}$.\n(1) When $a=1$, determine whether the statement $B \\subseteq A$ holds.\n(2) If $A \\subseteq B$, find the ",
       "ground_truth": "a < -8 \\text{ or",
-      "extracted_answer": "B \\subseteq A",
+      "extracted_answer": "1.",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3929
+      "response_length": 6528
     },
     {
       "question": "19. A list is made of every digit that is the units digit of at least one prime number. How many of the following numbers appear in the list?\nA 1\nB 2\nC 3\nD 4\nE 5",
       "ground_truth": "4",
-      "extracted_answer": "",
-      "is_correct": false,
+      "extracted_answer": "4, which would be option D",
+      "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 945
+      "response_length": 5676
     },
     {
       "question": "Which one of the following substances adsorb hydrogen gas most strongly\n\n(A) Activated carbon\n(B) Silica gel\n(C) Platinum black\n(D) Iron powder",
       "ground_truth": "C",
-      "extracted_answer": "C",
+      "extracted_answer": "probably (C) Platinum black",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 355
+      "response_length": 9816
     },
     {
       "question": "A fluid flows over a half body for which \\(U=0.4 \\mathrm{~m} / \\mathrm{s}\\) and\n\\(q=1.0 \\mathrm{~m}^{2} / \\mathrm{s}\\). Plot the half body, and determine the\nmagnitudes of the velocity and pressure in",
       "ground_truth": "$\\boxed{Velocity magnitude at (0.8 m, 90 deg) is approx 0.599 m/s}$",
-      "extracted_answer": "U=0.4 \\mathrm{~m} / \\mathrm{s}",
-      "is_correct": false,
+      "extracted_answer": "0",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 351
+      "response_length": 7149
     },
     {
       "question": "How many ordered pairs \\((a, b)\\) such that \\(a\\) is a positive real number and \\(b\\) is an integer between \\(3\\) and \\(300\\), inclusive, satisfy the equation \\((\\log_b a)^{101} = \\log_b(a^{101})\\)?\n\\",
       "ground_truth": "\\(\\textbf{(A)",
-      "extracted_answer": "A",
-      "is_correct": true,
+      "extracted_answer": "-101",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1913
+      "response_length": 6154
     },
     {
       "question": "A silver sphere of radius $1 \\mathrm{~cm}$ and work function $4.7 \\mathrm{eV}$ is suspended from an insulating thread in free-space. It is under continuous illumination of $200 \\mathrm{~nm}$ wavelengt",
       "ground_truth": "\\quad \\frac{h c",
-      "extracted_answer": "Z = 10",
+      "extracted_answer": "1.5",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 335
+      "response_length": 8674
     },
     {
       "question": "Explain why the mathematical treatment of discrete charges is simpler than that of continuous charge distributions.",
       "ground_truth": "$\\boxed{The mathematical treatment of discrete charges is simpler because it does not involve calculus. Continuous charge distributions, on the other hand, require calculus for integration over the charge distribution.}$",
-      "extracted_answer": "1",
+      "extracted_answer": "that in general, for arbitrary distributions, the integration is more complex, but for symmetric cases, Gauss's Law can simplify things",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 3285
+      "response_length": 8224
     },
     {
       "question": "A solar cell generates a potential difference of  0.10V \n when a 500 \n Ω \n  resistor is connected across it, and a potential difference of  0.15V \n when a  1000 \n Ω resistor is substituted. \n (a) What",
       "ground_truth": "$\\boxed{B}$",
-      "extracted_answer": "==========",
+      "extracted_answer": "0.15",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 545
+      "response_length": 5456
     },
     {
       "question": "As shown in the figure, the center of the dining table is a disk with a radius of $r{=}1.5\\mathsf{m}$. The disk can rotate around the central axis, and it is approximately considered that the disk and",
       "ground_truth": "[\"$2\\mathrm{rad",
-      "extracted_answer": "0.6",
+      "extracted_answer": "0.225",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 8713
+      "response_length": 9646
     },
     {
       "question": "Paragraph:\nWhen a metal rod $M$ is dipped into an aqueous colourless concentrated solution of compound $\\mathrm{N}$, the solution turns light blue. Addition of aqueous $\\mathrm{NaCl}$ to the blue solu",
       "ground_truth": "C",
-      "extracted_answer": "D",
+      "extracted_answer": "",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 953
+      "response_length": 9265
     },
     {
       "question": "What is the oxidation number of the #Mn# in #KMnO_4#?",
@@ -744,47 +744,47 @@
       "extracted_answer": "+7",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 941
+      "response_length": 4820
     },
     {
       "question": "A car of mass $1000 \\mathrm{~kg}$ accelerates uniformly from rest to a velocity of $54 \\mathrm{~km} /$ hour in $5 \\mathrm{~s}$. The average power of the engine during this period in watts is (neglect ",
       "ground_truth": "B",
-      "extracted_answer": "B",
+      "extracted_answer": "B) 22500 W",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 973
+      "response_length": 6462
     },
     {
       "question": "Two capacitors with capacitance values $C_{1}=2000 \\pm 10 \\mathrm{pF}$ and $C_{2}=3000 \\pm 15 \\mathrm{pF}$ are connected in series. The voltage applied across this combination is $V=5.00 \\pm 0.02 \\mat",
       "ground_truth": "1.3",
-      "extracted_answer": "0",
+      "extracted_answer": "2010",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 5105
+      "response_length": 6808
     },
     {
       "question": "A gas occupies a volume of #12.7*mL# at #295*K# in a piston; what volume will it occupy at #284*K#?",
       "ground_truth": "V_2 = 12.23 \\text{ mL",
-      "extracted_answer": "12.1\\mathrm{mL}",
+      "extracted_answer": "12.226",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 735
+      "response_length": 5129
     },
     {
       "question": "The flat strip is sprayed with paint using the six nozzles, each having a\ndiameter of \\(2 \\mathrm{~mm}\\). They are attached to the 20-mm-diameter pipe.\nThe strip is \\(50 \\mathrm{~mm}\\) wide, and the p",
       "ground_truth": "$\\boxed{The required speed V of the strip is 180pi mm/s.}$",
-      "extracted_answer": "0.03",
+      "extracted_answer": "A",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 343
+      "response_length": 7075
     },
     {
       "question": "A proton orbits a long charged wire, making  1 . 0 × 10 6  revolutions per second. The radius of the orbit is  1 . 0 c m . What is the wire’s linear charge density?",
       "ground_truth": "-2.28 \\, \\text{nC/m",
-      "extracted_answer": "0.10 \\, \\mu \\mathrm{C} / \\mathrm{m}",
+      "extracted_answer": "10",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 404
+      "response_length": 4947
     },
     {
       "question": "An ideal gas heat engine operates in Carnot cycle between \\( 227^{\\circ} \\mathrm{C} \\) and \\( 127^{\\circ} \\mathrm{C} \\). It absorbs \\( 6 \\times 10^{4} \\) cal of heat at high temperature. Amount of hea",
@@ -792,7 +792,7 @@
       "extracted_answer": "A",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 1184
+      "response_length": 6184
     },
     {
       "question": "Let \\( p \\) be a real number such that the equation \\( 2y^2 - 8y = p \\) has only one solution. Then:\n(A) \\( p<8 \\)\n(B) \\( p=8 \\)\n(C) \\( p>-8 \\)\n(D) \\( p=-8 \\)\n(E) \\( p<-8 \\)",
@@ -800,159 +800,159 @@
       "extracted_answer": "D",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1512
+      "response_length": 6116
     },
     {
       "question": "As shown in the figure, there are 50 speed bumps (not fully shown in the figure) on a smooth inclined plane with an inclination angle of $\\theta$. The distance between adjacent speed bumps is $d$, and",
       "ground_truth": "[\"$mgd\\\\sin\\\\theta$\", \"$\\frac{m g(L+29d)\\\\sin\\\\theta-\\\\mu m g s",
-      "extracted_answer": "[\"$\\frac{2\\mu gL}{m}$\", \"$\\frac{21\\mu gL}{m}$\", \"$\\frac{21\\mu gL}{m}$\"]",
+      "extracted_answer": "",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 1795
+      "response_length": 9704
     },
     {
       "question": "As shown in the figure, a vertical rod with uniform roughness is fixed. One end of a light elastic rope with an original length of \\( L_{0} \\) is fixed at point \\( A \\), and the other end passes throu",
       "ground_truth": "[\"$\\frac{4m g",
-      "extracted_answer": "\\( k = \\frac{mg}{L_0} \\)",
+      "extracted_answer": "",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 6750
+      "response_length": 8678
     },
     {
       "question": "Four points, $A$, $B$, $C$, and $D$, are chosen randomly and independently on the circumference of a circle. What is the probability that segments $AB$ and $CD$ intersect?",
       "ground_truth": "\\frac{1",
-      "extracted_answer": "\\frac{1}{3}",
-      "is_correct": true,
+      "extracted_answer": "6.",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1814
+      "response_length": 8882
     },
     {
       "question": "The perimeter of a sector of a circle is the sum of the two sides formed by the radii and the length of the included arc. A sector of a particular circle has a perimeter of 28 cm and an area of 49 sq ",
       "ground_truth": "14",
-      "extracted_answer": "14",
+      "extracted_answer": "14 cm",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1669
+      "response_length": 6173
     },
     {
       "question": "Let $d(n)$ denote the number of positive integers that divide $n$, including $1$ and $n$. Define the function:\n\\[ g(n) = \\frac{d(n)}{\\sqrt[4]{n}} \\]\nFind the smallest odd positive integer $N$ such tha",
       "ground_truth": "E",
-      "extracted_answer": "6",
+      "extracted_answer": "1",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 4040
+      "response_length": 6557
     },
     {
       "question": "(a) Using Equation 4.88, work out the first four Laguerre polynomials. \n (b) Using Equations 4.86, 4.87, and 4.88, find  v ( ρ ) \n , for the case  n = 5 , I = 2 . \n (c) Find  v ( ρ ) \n again (for the ",
       "ground_truth": "$\\boxed{A}$",
-      "extracted_answer": "v(\\rho) = L_{2}^{1}(\\rho)",
+      "extracted_answer": "0",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 3677
+      "response_length": 5999
     },
     {
       "question": "What is the pH of a #6.2 * 10^-3# M solution of #HF#?",
       "ground_truth": "\\text{pH",
-      "extracted_answer": "2.69",
+      "extracted_answer": "0.04356",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1704
+      "response_length": 4613
     },
     {
       "question": "A light, flexible rope is wrapped several times around a hollow cylinder, with a weight of 40.0 N and a radius of 0.25 m, that rotates without friction about a fixed horizontal axis. The cylinder is a",
       "ground_truth": "$\\boxed{The force P is 14.7 N.}$",
-      "extracted_answer": "0.00",
+      "extracted_answer": "2",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 343
+      "response_length": 7014
     },
     {
       "question": "Of the metals $B e, \\quad M g, \\quad C a$ and $S r$ of group II A. In the periodic table the least ionic chloride would be formed by\n\n(A) $\\mathrm{Be}$\n(B) $\\mathrm{Mg}$\n(C) $\\mathrm{Ca}$\n(D) $\\mathrm",
       "ground_truth": "A",
-      "extracted_answer": "A",
+      "extracted_answer": "(A)",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 1013
+      "response_length": 8282
     },
     {
       "question": "As shown in the figure, a large wheel drives a small wheel to rotate via a belt. There is no slippage between the belt and the two wheels. The radius of the large wheel is twice the radius of the smal",
       "ground_truth": "[\"$4\\mathrm{m",
-      "extracted_answer": "$24 \\mathrm{m/s^2}$",
-      "is_correct": false,
+      "extracted_answer": "4 m/s²? But maybe the problem is asking for the centripetal acceleration of point P on the small wheel? Let me check",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 6116
+      "response_length": 8001
     },
     {
       "question": "Given the function $f(x) = x^{3} + 3ax^{2} + bx + a^{2}$ has a local extremum of $0$ at $x = -1$.  \n$(1)$ Find the analytical expression of the function $f(x)$.  \n$(2)$ Let $h(x) = f(x) - m + 1$. If t",
       "ground_truth": "f(x) = x^{3",
-      "extracted_answer": "Since the problem states \"the function $f(x)$\", implying a unique function, we need to check if both functions have a local extremum of $0$ at $x = -1$ and if they are distinct.",
+      "extracted_answer": "-1.",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 6742
+      "response_length": 5923
     },
     {
       "question": "How many moles of  #Ca(NO_3)_2# are there in 75 mL of 0.25 M solution?",
       "ground_truth": "0.02 \\text{ moles",
-      "extracted_answer": "0.01875",
-      "is_correct": false,
+      "extracted_answer": "0",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 812
+      "response_length": 6332
     },
     {
       "question": "The IUPAC name of the following structure is",
       "ground_truth": "A",
-      "extracted_answer": "",
-      "is_correct": false,
+      "extracted_answer": "that the structure is missing, and the IUPAC name cannot be determined without it",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 683
+      "response_length": 3342
     },
     {
       "question": "A hydrogen-like atom (atomic number Z) is in a higher excited state of quantum number n. This excited atom can make a transition to the first excited state by successively emitting two photons of ener",
       "ground_truth": "Solving the above two equation we get, Z=3 and n=6.",
-      "extracted_answer": "Z=3",
-      "is_correct": true,
+      "extracted_answer": "10.20",
+      "is_correct": false,
       "subject": "Physics",
-      "response_length": 329
+      "response_length": 5442
     },
     {
       "question": "A resistance of $2 \\Omega$ is connected across one gap of a meter-bridge (the length of the wire is $100 \\mathrm{~cm}$ ) and an unknown resistance, greater than $2 \\Omega$, is connected across the oth",
       "ground_truth": "A",
-      "extracted_answer": "A",
-      "is_correct": true,
+      "extracted_answer": "20",
+      "is_correct": false,
       "subject": "Physics",
-      "response_length": 2608
+      "response_length": 6909
     },
     {
       "question": "Which of the following arrangements represents the increasing order (smallest to largest) of ionic radii of the given species $\\mathrm{O}^{2-}, \\mathrm{S}^{2-}, \\mathrm{N}^{3-}, \\mathrm{P}^{3-}$ ?\n\n(A",
       "ground_truth": "A",
-      "extracted_answer": "C",
+      "extracted_answer": "18",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 415
+      "response_length": 7012
     },
     {
       "question": "Prove that if $\\alpha$ is an acute angle, then\n$$\n\\frac{1}{2} < \\frac{\\sqrt{3}}{2} \\sin \\alpha + \\frac{1}{2} \\cos \\alpha \\leqslant 1.\n$$",
       "ground_truth": "\\frac{1",
-      "extracted_answer": "1.",
+      "extracted_answer": "1",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 2148
+      "response_length": 6162
     },
     {
       "question": "Which of the following liberates $\\mathrm{O}_{2}$ upon hydrolysis?\n\n(A) $\\mathrm{Pb}_{3} \\mathrm{O}_{4}$\n\n(B) $\\mathrm{KO}_{2}$\n\n(C) $\\mathrm{Na}_{2} \\mathrm{O}_{2}$\n\n(D) $\\mathrm{Li}_{2} \\mathrm{O}_{",
       "ground_truth": "B",
-      "extracted_answer": "C",
-      "is_correct": false,
+      "extracted_answer": "B, C, D",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 410
+      "response_length": 8166
     },
     {
       "question": "For any complex number $w=c+i d$, let $\\arg (\\mathrm{w}) \\in(-\\pi, \\pi]$, where $i=\\sqrt{-1}$. Let $\\alpha$ and $\\beta$ be real numbers such that for all complex numbers $z=x+i y$ satisfying $\\arg \\le",
       "ground_truth": "BD",
-      "extracted_answer": "\\text{(A) False}",
+      "extracted_answer": "A",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3998
+      "response_length": 6691
     },
     {
       "question": "Describe the nature of chemical equilibrium in a reversible reaction.",
@@ -960,31 +960,31 @@
       "extracted_answer": "",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 2163
+      "response_length": 6323
     },
     {
       "question": "A balloon has a volume of 2.9 L at 320 Kelvin. If the temperature is raised to 343 Kelvin, what will its volume be?",
       "ground_truth": "3.11 \\text{ L",
-      "extracted_answer": "The volume of the balloon will be approximately 3.11 liters.",
-      "is_correct": true,
+      "extracted_answer": "9",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 893
+      "response_length": 6318
     },
     {
       "question": "The product obtained from the electrolytic oxidation of acidified sulphate solutions, is :\n\n(A) HSO4-\n(B) HO3SOOSO3H\n(C) HO2SOSO2H\n(D) HO3SOSO3H",
       "ground_truth": "B",
-      "extracted_answer": "D",
-      "is_correct": false,
+      "extracted_answer": "B",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 1056
+      "response_length": 8245
     },
     {
       "question": "How many grams are in 3 mol of #KBr#?",
       "ground_truth": "357 \\text{ grams",
-      "extracted_answer": "357.00 \\, \\text{g}",
+      "extracted_answer": "357",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 870
+      "response_length": 4452
     },
     {
       "question": "Harry charges $4 to babysit for the first hour. For each additional hour, he charges 50% more than he did for the previous hour. How much money in total would Harry earn for 4 hours of babysitting?\n(A",
@@ -992,15 +992,15 @@
       "extracted_answer": "C",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 884
+      "response_length": 6469
     },
     {
       "question": "The hottest region of Bunsen flame shown in the figure below is:\n\n(A) Region 3\n(B) Region 4\n(C) Region 1\n(D) Region 2",
       "ground_truth": "D",
-      "extracted_answer": "A",
+      "extracted_answer": "likely A or B",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1306
+      "response_length": 8711
     },
     {
       "question": "The half-life of a radio-isotope is 4 h . If initial mass of the isotope was 200 g , then mass remaining after 24 h will be\n\n(A) 1.042 g\n(B) 2.084 g\n(C) 3.125 g\n(D) 4.167 g",
@@ -1008,7 +1008,7 @@
       "extracted_answer": "C",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 921
+      "response_length": 4939
     },
     {
       "question": "The equations $x^3 + 5x^2 + px + q = 0$ and $x^3 + 7x^2 + px + r = 0$ have two roots in common.  If the third root of each equation is represented by $x_1$ and $x_2$ respectively, compute the ordered ",
@@ -1016,47 +1016,47 @@
       "extracted_answer": "(-5, -7)",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 2135
+      "response_length": 6386
     },
     {
       "question": "Match List I with List II\n     List I (Name of polymer)   List II (Uses)   A Glyptal I Flexible pipes   B Neoprene II Synthetic wool   C Acrilan III Paints and Lacquers   D LDP IV Gaskets  \nChoose the",
       "ground_truth": "B",
-      "extracted_answer": "B",
+      "extracted_answer": "that D is I, and B is IV",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 1737
+      "response_length": 8053
     },
     {
       "question": "What happens to Z values below Boyle temperature for real gases?\n\n(A) Z remains constant at 1.\n(B) Z decreases as pressure increases, reaching a minimum value.\n(C) Z shows negative deviations from ide",
       "ground_truth": "B",
-      "extracted_answer": "B",
-      "is_correct": true,
+      "extracted_answer": "D",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1063
+      "response_length": 9630
     },
     {
       "question": "For an isosceles prism of angle $A$ and refractive index $\\mu$, it is found that the angle of minimum deviation $\\delta_{m}=A$. Which of the following options is/are correct?\n\n[A] For the angle of inc",
       "ground_truth": "ACD",
-      "extracted_answer": "D",
+      "extracted_answer": "A",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 406
+      "response_length": 6840
     },
     {
       "question": "Convert $\\sqrt{3} e^{13\\pi i/6}$ to rectangular form.",
       "ground_truth": "\\frac{3",
-      "extracted_answer": "\\frac{3}{2} + \\frac{\\sqrt{3}}{2}i",
+      "extracted_answer": "3/2 + i√3/2",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1436
+      "response_length": 5979
     },
     {
       "question": "The chemical nature of hydrogen peroxide is:\n\n(A) Oxidizing and reducing agent in both acidic and basic medium.\n(B) Oxidizing agent in acidic medium, but not in basic medium\n(C) Oxidizing and reducing",
       "ground_truth": "A",
-      "extracted_answer": "A",
-      "is_correct": true,
+      "extracted_answer": "D",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 782
+      "response_length": 8106
     },
     {
       "question": "Describe the conditions at the node and antinode in a standing wave formed in a glass tube partially filled with water.",
@@ -1064,7 +1064,7 @@
       "extracted_answer": "",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 1746
+      "response_length": 7720
     },
     {
       "question": "The ski track AB consists of an inclined ramp and a horizontal section, smoothly connected, with the ramp inclined at $45^{\\circ}$. The platform BC is connected to the buffer slope CD. A skier starts ",
@@ -1072,7 +1072,7 @@
       "extracted_answer": "",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 8532
+      "response_length": 9320
     },
     {
       "question": "In the polyatomic ion, CrO4 -2, what is the charge on the chromium atom?",
@@ -1080,7 +1080,7 @@
       "extracted_answer": "+6",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 817
+      "response_length": 4914
     },
     {
       "question": "Consider the given compounds\n (1) CH3âCH2âNH2\n (2) CH3âCH=NH\n (3) CH3âCâ¡N\n (4) C2H5âNHâC2H5\n\rArrange basicity of these compounds in decreasing order:\n\n(A) 4 &gt; 1 &gt; 2 &gt; 3\n(B) 1 &g",
@@ -1088,15 +1088,15 @@
       "extracted_answer": "C",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 588
+      "response_length": 7858
     },
     {
       "question": "3 g of activated charcoal was added to 50 mL of acetic acid solution (0.06 N) in a flask. After an hour, it was filtered and the strength of the filtrate was found to be 0.042 N. The amount of acetic ",
       "ground_truth": "B",
-      "extracted_answer": "(B) 18 mg",
-      "is_correct": true,
+      "extracted_answer": "in milligrams per gram of charcoal, I need to convert equivalents to grams",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1432
+      "response_length": 6844
     },
     {
       "question": "Which of the following metals cannot be extracted by carbon reduction process\n\n(A) $\\mathrm{Pb}$\n(B) $\\mathrm{Al}$\n(C) $\\mathrm{Hg}$\n(D) $\\mathrm{Zn}$",
@@ -1104,15 +1104,15 @@
       "extracted_answer": "B",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 369
+      "response_length": 9375
     },
     {
       "question": "For some complex number $\\omega$ with $|\\omega| = 2,$ there is some real $\\lambda > 1$ such that $\\omega,$ $\\omega^2,$ and $\\lambda \\omega$ form an equilateral triangle in the complex plane.  Find $\\l",
       "ground_truth": "\\frac{1 + \\sqrt{13",
-      "extracted_answer": "-4",
+      "extracted_answer": "0",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 5119
+      "response_length": 5632
     },
     {
       "question": "Let $\\alpha, \\beta$ and $\\gamma$ be real numbers such that the system of linear equations\n\\[\\begin{gathered}\nx+2 y+3 z=\\alpha \\\\\n4 x+5 y+6 z=\\beta \\\\\n7 x+8 y+9 z=\\gamma-1\n\\end{gathered}\\]\nis consisten",
@@ -1120,15 +1120,15 @@
       "extracted_answer": "A",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 6390
+      "response_length": 6731
     },
     {
       "question": "In the circuit shown in figure, the base current IB is 10 μA and the collector current is 5.2 mA. The voltage (VBE) across the base and emitter is",
       "ground_truth": "V_{BE",
-      "extracted_answer": "0.7 V",
+      "extracted_answer": "0",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 339
+      "response_length": 9111
     },
     {
       "question": "Describe the characteristic properties of transition metals.",
@@ -1136,39 +1136,39 @@
       "extracted_answer": "",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 3525
+      "response_length": 10187
     },
     {
       "question": "Triangle $ABC$ is a right isosceles triangle. Points $D$, $E$ and $F$ are the midpoints of the sides of the triangle. Point $G$ is the midpoint of segment $DF$ and point $H$ is the midpoint of segment",
       "ground_truth": "\\frac{5",
-      "extracted_answer": "0.1875",
+      "extracted_answer": "1",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 5253
+      "response_length": 4983
     },
     {
       "question": "Given that the graph of the quadratic function $y=f(x)$ intersects the line $y=-6$ at only one point, and satisfies $f(0)=f(-4)=-2$, $g(x)=\\frac{{f(x)}}{x}$.  \n$(1)$ Find the analytical expression of ",
       "ground_truth": "m\\in (-\\infty ,-3]\\cup [-1,1]\\cup [3,+\\infty)",
-      "extracted_answer": "m \\in (-\\infty, -3] \\cup [3, \\infty)",
+      "extracted_answer": "1",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 4268
+      "response_length": 6191
     },
     {
       "question": "At STP, what is the volume of 7.08 mol of nitrogen gas?",
       "ground_truth": "158.59 \\text{ L",
-      "extracted_answer": "7.08 \\text{ mol} \\times 22.4 \\text{ L/mol} = 158.496 \\text{ L}",
-      "is_correct": false,
+      "extracted_answer": "158",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 595
+      "response_length": 5591
     },
     {
       "question": "A metal rod that is 4.00 m long and  0 . 50 c m 2 in cross-sectional area is found to stretch 0.20 cm under a tension of 5000 N. What is Young’s modulus for this metal?",
       "ground_truth": "$\\boxed{Young's modulus for the metal is 2 x 10^11 Pa}$",
-      "extracted_answer": "2.0 \\times 10^{11} \\text{ N/m}^2",
-      "is_correct": false,
+      "extracted_answer": "2 x 10^11 Pa",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 807
+      "response_length": 5369
     },
     {
       "question": "Which one of the following acids is the weakest\n\n(A) $\\mathrm{HClO}$\n(B) $\\mathrm{HBr}$\n(C) $\\mathrm{HClO}_3$\n(D) $\\mathrm{HCl}$",
@@ -1176,7 +1176,7 @@
       "extracted_answer": "A",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 659
+      "response_length": 6475
     },
     {
       "question": "Describe the role of a magnetron valve in the production of microwaves.",
@@ -1184,31 +1184,31 @@
       "extracted_answer": "",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 1852
+      "response_length": 8683
     },
     {
       "question": "What mass of #NaOH# is contained in 250.0 mL of a 0.400 M sodium hydroxide solution?",
       "ground_truth": "4.00 \\text{ g",
-      "extracted_answer": "4.00",
+      "extracted_answer": "0",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 615
+      "response_length": 5826
     },
     {
       "question": "Given several red and several blue points, some of which are connected by segments. We call a point \"special\" if more than half of the points connected to it have a different color than its own. If th",
       "ground_truth": "$\\boxed{}$",
-      "extracted_answer": "\\text{After a finite number of steps, there will be no special points left.}",
+      "extracted_answer": "",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3617
+      "response_length": 8708
     },
     {
       "question": "The number and type of bonds between two carbon atoms in \\( \\mathrm{CaC}_{2} \\) are\n\n(A) One sigma \\( (\\sigma) \\) and one pi \\( (\\pi) \\) bond\n(B) One sigma \\( (\\sigma) \\) and one and half pi \\( (\\pi) ",
       "ground_truth": "D",
-      "extracted_answer": "D",
-      "is_correct": true,
+      "extracted_answer": "A",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1000
+      "response_length": 8228
     },
     {
       "question": "During halogen test, sodium fusion extract is boiled with concentrated HNO3 to\n\n(A) remove unreacted sodium\n(B) decompose cyanide or sulphide of sodium\n(C) extract halogen from organic compound\n(D) ma",
@@ -1216,15 +1216,15 @@
       "extracted_answer": "B",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 321
+      "response_length": 6095
     },
     {
       "question": "Among the statements a-d , the incorrect ones are:\na Octahedral CoIII complexes with strong field ligands have very high magnetic moments\nb When ∆0&lt;P , the d-electron configuration of CoIII in an o",
       "ground_truth": "A",
-      "extracted_answer": "(D) b and c only",
-      "is_correct": true,
+      "extracted_answer": "6",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 2394
+      "response_length": 8079
     },
     {
       "question": "A galvanometer can be used as a voltmeter by connecting a\n\n(A) High resistance in series\n(B) Low resistance in series\n(C) High resistance in parallel\n(D) Low resistance in parallel",
@@ -1232,7 +1232,7 @@
       "extracted_answer": "A",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 503
+      "response_length": 7135
     },
     {
       "question": "The number $1000!$ has a long tail of zeroes. How many zeroes are there?  (Reminder: The number $n!$ is the product of the integers from 1 to $n$.  For example, $5!=5\\cdot 4\\cdot3\\cdot2\\cdot 1= 120$.)",
@@ -1240,55 +1240,55 @@
       "extracted_answer": "249",
       "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1725
+      "response_length": 5887
     },
     {
       "question": "Let \\( M \\) be the set of functions \\( f: \\mathbf{Z} \\rightarrow \\mathbf{R} \\) that satisfy the condition \\( f(0) \\neq 0 \\) and the identity\n\n\\[\nf(n) f(m) \\equiv f(n+m)+f(n-m), \\quad n, m \\in \\mathbf{",
       "ground_truth": "f(n) = 2^n + 2^{-n",
-      "extracted_answer": "b) \\quad f(n) = \\frac{a^n - a^{-n}}{2} \\text{ where } a = \\sqrt{3} \\pm 2",
-      "is_correct": true,
+      "extracted_answer": "1",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3105
+      "response_length": 5753
     },
     {
       "question": "An astronaut whose height $h$ is $1.70 \\mathrm{~m}$ floats \"feet down\" in an orbiting space shuttle at distance $r=6.77 \\times 10^6 \\mathrm{~m}$ away from the center of Earth. What is the difference b",
       "ground_truth": "$\\boxed{-4.37 }$",
-      "extracted_answer": "$0",
+      "extracted_answer": "6.77",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 2348
+      "response_length": 8938
     },
     {
       "question": "How many grams is .25 mol of #CO_2# molecules?",
       "ground_truth": "11.00 \\text{ grams",
-      "extracted_answer": "11.00",
+      "extracted_answer": "11 grams",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 972
+      "response_length": 6456
     },
     {
       "question": "Given vectors $\\overrightarrow{a}=(x,1), \\overrightarrow{b}=(0,1) (x > 0)$, if vector $2\\overrightarrow{a}-\\overrightarrow{b}$ is perpendicular to vector $\\overrightarrow{a}-2\\overrightarrow{b}$, find",
       "ground_truth": "x = \\frac{\\sqrt{2",
-      "extracted_answer": "\\frac{\\sqrt{2}}{2}",
-      "is_correct": false,
+      "extracted_answer": "x equals √2 over 2",
+      "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 1277
+      "response_length": 5963
     },
     {
       "question": "Wind energy is a renewable and clean energy source. A small wind power station has been built in a remote area of a county to supply electricity to the industrial park users in the county. The schemat",
       "ground_truth": "[\"$\\frac{1",
-      "extracted_answer": "14",
+      "extracted_answer": "220",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 5945
+      "response_length": 7924
     },
     {
       "question": "Chlorination of toluene in presence of light and heat followed by treatment with aqueous NaOH gives",
       "ground_truth": "D",
-      "extracted_answer": "B",
+      "extracted_answer": "",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 602
+      "response_length": 9705
     },
     {
       "question": "Coherent monochromatic light of wavelength  λ passes through a narrow slit of width a, and a diffraction pattern is observed on a screen that is a distance x from the slit. On the screen, the width w ",
@@ -1296,55 +1296,55 @@
       "extracted_answer": "1",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 956
+      "response_length": 7295
     },
     {
       "question": "Solve for the smallest value of $x$ such that $24x^2 + 17x - 20 = 0.$ Express your answer as a simplified common fraction.",
       "ground_truth": "-\\frac{4",
-      "extracted_answer": "$-\\frac{4}{3}",
-      "is_correct": true,
+      "extracted_answer": "-4/3",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1022
+      "response_length": 5230
     },
     {
       "question": "Given vectors $\\overrightarrow{a}=(3,1)$ and $\\overrightarrow{b}=(x,-1)$, if $\\overrightarrow{a}- \\overrightarrow{b}$ is collinear with $\\overrightarrow{b}$, then the value of $x$ is ( ).\n\nA: $-3$\n\nB:",
       "ground_truth": "A",
-      "extracted_answer": "A",
-      "is_correct": true,
+      "extracted_answer": "x = -3",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1238
+      "response_length": 7025
     },
     {
       "question": "Two smooth parallel conducting rings are fixed in a vertical plane, placed directly opposite each other. The radius of each ring is $R = 0.125 \\mathrm{m}$, and they are separated by a distance of $1 \\",
       "ground_truth": "[\"0.8N\", \"0.4T\", \"0.54N\"]",
-      "extracted_answer": "",
+      "extracted_answer": "37",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 10806
+      "response_length": 9255
     },
     {
       "question": "Triangle $PQR$ is similar to triangle $XYZ$. If $PQ=8$, $QR=16$, and $YZ=24$ units, find the length of segment $XY$ given that the area of triangle $XYZ$ is 144 square units.",
       "ground_truth": "12",
-      "extracted_answer": "12",
-      "is_correct": true,
+      "extracted_answer": "8",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 983
+      "response_length": 7332
     },
     {
       "question": "ABCD is a track fixed in a vertical plane. The AB segment is a rough inclined track with an inclination angle of $\\theta=37^{\\circ}$, the BC segment is horizontal and smooth, and the CD segment is a s",
       "ground_truth": "[\"2m/s\", \"$\\frac{3E_0",
-      "extracted_answer": "21",
+      "extracted_answer": "0.1",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 7314
+      "response_length": 9633
     },
     {
       "question": "Provide an example of a highly soluble salt where activities of ions are used instead of molarities in the expression for Qsp.",
       "ground_truth": "$\\boxed{An example of a highly soluble salt where activities of ions are used instead of molarities in the expression for Qsp is sodium chloride (NaCl).}$",
-      "extracted_answer": "",
+      "extracted_answer": "that for a highly soluble salt like NaCl, the Qsp is calculated using the activities of the ions, which may differ from their molarities, especially in concentrated solutions",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 2145
+      "response_length": 9953
     },
     {
       "question": "Out of the following, which type of interaction is responsible for the stabilisation of α-helix structure of proteins?\n\n(A) Covalent bonding\n(B) Ionic bonding\n(C) Hydrogen bonding\n(D) vander Waals for",
@@ -1352,55 +1352,55 @@
       "extracted_answer": "C",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 321
+      "response_length": 3389
     },
     {
       "question": "Given that the graphs of $y=h(x)$ and $y=j(x)$ intersect at $(2,2),$ $(4,6),$ $(6,12),$ and $(8,12),$ there is one point where the graphs of $y=h(2x)$ and $y=2j(x)$ must intersect. What is the sum of ",
       "ground_truth": "16",
-      "extracted_answer": "12",
+      "extracted_answer": "2",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 5743
+      "response_length": 6487
     },
     {
       "question": "Express the van der Waals parameters $a=0.751 \\mathrm{~atm} \\mathrm{dm}^6 \\mathrm{~mol}^{-2}$ in SI base units.",
       "ground_truth": "$\\boxed{0.0761}$",
-      "extracted_answer": "0.751",
+      "extracted_answer": "76.095075",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 344
+      "response_length": 4881
     },
     {
       "question": "Let $a,$ $b,$ $c$ be positive real numbers such that both\n\\[x^4 + ax^3 + bx^2 + cx + 1\\]and\n\\[x^4 + 2ax^3 + 2bx^2 + 2cx + 1\\]are both squares of polynomials.  Find $a + b + c.$",
       "ground_truth": "7",
-      "extracted_answer": "2",
-      "is_correct": false,
+      "extracted_answer": "2 + 3 + 2 = 7",
+      "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 4206
+      "response_length": 6100
     },
     {
       "question": "Let $S_{n}$ be the sum of the first $n$ terms of the sequence ${a_{n}}$. Given that $a_{1} \\neq 0$, and $2a_{n} - a_{1} = S_{1}S_{n}$ for all $n \\in \\mathbb{N}^*$. Find:\n\n1. The value of $a_{1}$ and t",
       "ground_truth": "a_{n",
-      "extracted_answer": "a_{1} = 1, a_{n} = 2^{n-1}, T_{n} = (n-1) \\cdot 2^{n} + 1",
-      "is_correct": true,
+      "extracted_answer": "1",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 2438
+      "response_length": 5428
     },
     {
       "question": "B2 Points $A(-4,-2), B(2,-2)$ and $C(2,6)$ are the vertices of triangle $A B C$.\n\nA Draw triangle $A B C$ in the coordinate system.\n\nB Calculate the perimeter of triangle $A B C$.\n\nC Calculate the are",
       "ground_truth": "24",
-      "extracted_answer": "\\sqrt{73}",
+      "extracted_answer": "that the circle is centered at (-1, 2) with radius 5",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3448
+      "response_length": 6977
     },
     {
       "question": "Describe the behavior of the image formed by a concave lens when the object is placed at the focus.",
       "ground_truth": "$\\boxed{21 cm, the image will be located at 10.5 cm from the lens, not at infinity}$",
-      "extracted_answer": "",
-      "is_correct": false,
+      "extracted_answer": "1",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 1471
+      "response_length": 8768
     },
     {
       "question": "In the circuit shown in Figure 1, $\\mathrm{R}_{1}$ and $\\mathrm{R}_{2}$ are fixed resistors, with $\\mathrm{R}_{1}=50\\Omega$, and the resistance of $\\mathrm{R}_{2}$ is unknown. $\\mathrm{R}_{3}$ is a va",
@@ -1408,39 +1408,39 @@
       "extracted_answer": "",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 559
+      "response_length": 10283
     },
     {
       "question": "Three randomly chosen nonnegative integers $x, y$ and $z$ are found to satisfy the equation $x+y+z=10$. Then the probability that $z$ is even, is\n\n[A] $\\frac{36}{55}$\n\n[B] $\\frac{6}{11}$\n\n[C] $\\frac{1",
       "ground_truth": "B",
-      "extracted_answer": "\\text{B}",
-      "is_correct": true,
+      "extracted_answer": "11",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 2376
+      "response_length": 6209
     },
     {
       "question": "When 90Th228 transforms to 83Bi212 , then the number to the emitted α and β -particles are, respectively\n\n(A) 8Î±,Â 7Î²\n(B) 4Î±,Â 7Î²\n(C) 4Î±,Â 4Î²\n(D) 4Î±, 1Î²",
       "ground_truth": "D",
-      "extracted_answer": "",
-      "is_correct": false,
+      "extracted_answer": "D",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 2569
+      "response_length": 7139
     },
     {
       "question": "There are 2023 employees in the office, each of them knowing exactly 1686 of the others. For any pair of employees, they either both know each other or both don't know each other. Prove that we can fi",
       "ground_truth": "7",
-      "extracted_answer": "7",
-      "is_correct": true,
+      "extracted_answer": "6",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 4121
+      "response_length": 8267
     },
     {
       "question": "A long wire carries a steady current. It is bent into a circle of one turn and the magnetic field at the center of the coil is B. It is then bent into a circular loop of n turns. The magnetic field at",
       "ground_truth": "B",
-      "extracted_answer": "(A) nB",
+      "extracted_answer": "(B) n²B",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 1297
+      "response_length": 7275
     },
     {
       "question": "Which of the following compounds can be used as antifreeze in automobile radiators?\n\n(A) Methyl alcohol\n(B) Glycol\n(C) Nitrophenol\n(D) Ethyl alcohol",
@@ -1448,95 +1448,95 @@
       "extracted_answer": "B",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 320
+      "response_length": 8514
     },
     {
       "question": "Sodium Carbonate cannot be used in place of $\\left(\\mathrm{NH}_4\\right)_2 \\mathrm{CO}_3$ for the identification of $\\mathrm{Ca}^{2+}, \\mathrm{Ba}^{2+}$ and $\\mathrm{Sr}^{2+}$ ions (in group $\\mathrm{V",
       "ground_truth": "A",
-      "extracted_answer": "A",
-      "is_correct": true,
+      "extracted_answer": "",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1387
+      "response_length": 8466
     },
     {
       "question": "Roughly speaking for what range of wavelengths would we need to treat an electron relativistically, and what would be the corresponding range of accelerating potentials? Explain your assumptions.",
       "ground_truth": "$\\boxed{Relativistic treatment is needed for electron wavelengths roughly less than or equal to 2.43 x 10^-11 m (based on the solution's calculation).}$",
-      "extracted_answer": "$\\lambda \\leq 10^{-10} \\text{ m}$ (or 0.1 nm) and $V \\geq 100 \\text{ kV}$",
+      "extracted_answer": "1.6",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 3263
+      "response_length": 7555
     },
     {
       "question": "The major product of the following reaction is",
       "ground_truth": "B",
-      "extracted_answer": "B",
-      "is_correct": true,
+      "extracted_answer": "",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 365
+      "response_length": 4336
     },
     {
       "question": "Mr. Smith brings home 7 animals for his 7 children.  Each child will adopt a pet to be her or his own.  There are 4 different cats (a Siamese, a Persian, a Calico, and a Minx), 2 different dogs (a Poo",
       "ground_truth": "864",
-      "extracted_answer": "4320",
-      "is_correct": false,
+      "extracted_answer": "864.",
+      "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 2571
+      "response_length": 8139
     },
     {
       "question": "Find the minimum value of $x^6 + y^6 - 54xy$ over all real numbers $x$ and $y.$",
       "ground_truth": "-108",
-      "extracted_answer": "-108",
-      "is_correct": true,
+      "extracted_answer": "3",
+      "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1640
+      "response_length": 5737
     },
     {
       "question": "Which one of the following reactions is an example for calcination process?\n\n(A) 2 Ag+2 HCl+(O)â2 AgCl+H2O\n(B) 2 Zn+O2â2 ZnO\n(C) 2 ZnS+3 O2â2 ZnO+2 SO2\n(D) MgCO3âMgO+CO2",
       "ground_truth": "D",
-      "extracted_answer": "(D) MgCO3âMgO+CO2",
+      "extracted_answer": "D",
       "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 933
+      "response_length": 5808
     },
     {
       "question": "A moving coil galvanometer has 150 equal divisions. Its current sensitivity is 10 divisions per milliampere and voltage sensitivity is 2 divisions per millivolt. In order that each division reads 1 vo",
       "ground_truth": "D",
-      "extracted_answer": "C",
-      "is_correct": false,
+      "extracted_answer": "D",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 1523
+      "response_length": 7611
     },
     {
       "question": "Question: (II) What volume of water at 0°C can a freezer make into ice cubes in 1.0 h, if the coefficient of performance of the cooling unit is 6.0 and the power input is 1.2 kilowatt?",
       "ground_truth": "$\\boxed{Volume of water frozen: 78 L}$",
-      "extracted_answer": "$0",
+      "extracted_answer": "0.776",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 2347
+      "response_length": 5290
     },
     {
       "question": "Chemistry; Calorimetry; Calculating Heat Capacity; Help Please?!",
       "ground_truth": "85.00°C",
-      "extracted_answer": "",
-      "is_correct": false,
+      "extracted_answer": "C",
+      "is_correct": true,
       "subject": "Chemistry",
-      "response_length": 2350
+      "response_length": 9010
     },
     {
       "question": "In a converging lens of focal length \\(f\\) and the distance between real object\nand its real image is \\(4 f\\). If the object moves \\(x_{1}\\) distance towards\nlens, its image moves \\(x_{2}\\) distance a",
       "ground_truth": "$\\boxed{A}$",
-      "extracted_answer": "A",
-      "is_correct": true,
+      "extracted_answer": "2",
+      "is_correct": false,
       "subject": "Physics",
-      "response_length": 861
+      "response_length": 6564
     },
     {
       "question": "Enthalpy is equal to\n\n(A) T2âG/TâTP\n(B) âT2âG/TâTP\n(C) T2âG/TâTV\n(D) âT2âG/TâTV",
       "ground_truth": "B",
-      "extracted_answer": "D",
+      "extracted_answer": "C",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 602
+      "response_length": 6651
     },
     {
       "question": "A particle of mass $1 \\times 10^{-26} \\mathrm{~kg}$ and charge $1.6 \\times 10^{-19} \\mathrm{C}$ travelling with a velocity $1.28 \\times 10^6 \\mathrm{~ms}^{-1}$ along the positive $X$-axis enters a reg",
@@ -1544,79 +1544,79 @@
       "extracted_answer": "A",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 1376
+      "response_length": 6445
     },
     {
       "question": "What is the value of\n\n\\[\n\\sec ^{-1}\\left(\\frac{1}{4} \\sum_{k=0}^{10} \\sec \\left(\\frac{7 \\pi}{12}+\\frac{k \\pi}{2}\\right) \\sec \\left(\\frac{7 \\pi}{12}+\\frac{(k+1) \\pi}{2}\\right)\\right)\n\\]\n\nin the interva",
       "ground_truth": "0",
-      "extracted_answer": "\\frac{\\pi}{4}",
-      "is_correct": false,
+      "extracted_answer": "10",
+      "is_correct": true,
       "subject": "Mathematics",
-      "response_length": 4011
+      "response_length": 4748
     },
     {
       "question": "Correct order of reactivity of $\\mathrm{CH}_3 \\mathrm{CHO}, \\mathrm{C}_2 \\mathrm{H}_5 \\mathrm{COCH}_3$ and $\\mathrm{CH}_3 \\mathrm{COCH}_3$ is",
       "ground_truth": "A",
-      "extracted_answer": "\\mathrm{CH}_3 \\mathrm{CHO} > \\mathrm{CH}_3 \\mathrm{COCH}_3 > \\mathrm{C}_2 \\mathrm{H}_5 \\mathrm{COCH}_3",
+      "extracted_answer": "4.",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1383
+      "response_length": 6378
     },
     {
       "question": "A bag contains 6 balls that are identical in shape and size except for their color, with 4 red balls and 2 black balls. Now, 2 balls are drawn from the bag.  \n(Ⅰ) Calculate the probability that both b",
       "ground_truth": "\\frac {2",
-      "extracted_answer": "\\frac{8}{15}",
+      "extracted_answer": "\\dfrac{8}{15}",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 1336
+      "response_length": 7130
     },
     {
       "question": "If on combining two charged bodies, the current does not flow then",
       "ground_truth": "C",
-      "extracted_answer": "The bodies are at the same electric potential.",
+      "extracted_answer": "that the charges are equal in magnitude and same in sign",
       "is_correct": true,
       "subject": "Physics",
-      "response_length": 561
+      "response_length": 10131
     },
     {
       "question": "A flask contains a mixture of compounds A and B. Both compounds decompose by first-order kinetics. The half-lives for A and B are 300 s and 180 s, respectively. If the concentrations of A and B are eq",
       "ground_truth": "B",
-      "extracted_answer": "(B) 900",
-      "is_correct": true,
+      "extracted_answer": "1.386",
+      "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 1954
+      "response_length": 5008
     },
     {
       "question": "For a certain value of $k$, the system\n\\[\n\\begin{align*}\nx + ky - z &= 0, \\\\\n4x + 2ky + 3z &= 0, \\\\\n3x + 6y + 2z &= 0\n\\end{align*}\n\\]\nhas a solution where $x$, $y$, and $z$ are all nonzero. Find $\\fra",
       "ground_truth": "\\frac{1368",
-      "extracted_answer": "-\\frac{360}{121}",
+      "extracted_answer": "B",
       "is_correct": false,
       "subject": "Mathematics",
-      "response_length": 3105
+      "response_length": 5751
     },
     {
       "question": "In the valley, there are three stones and an inextensible, lightweight green vine. The schematic diagram is as follows. In the diagram, points $A$, $B$, $C$, and $D$ are the edges of the stones, and p",
       "ground_truth": "[\"$8\\mathrm{m/s",
-      "extracted_answer": "1.8",
-      "is_correct": false,
+      "extracted_answer": "8.0",
+      "is_correct": true,
       "subject": "Physics",
-      "response_length": 7451
+      "response_length": 8618
     },
     {
       "question": "Find out the volume of 6.023*10²² of ammonia at stp?",
       "ground_truth": "2.27 \\text{ L",
-      "extracted_answer": "22.4",
+      "extracted_answer": "approximately 2",
       "is_correct": false,
       "subject": "Chemistry",
-      "response_length": 430
+      "response_length": 5311
     },
     {
       "question": "Describe the relationship between the work done at the two ends of a pipe through which a fluid flows.",
       "ground_truth": "$\\boxed{the volume of fluid}$",
-      "extracted_answer": "The work done at the two ends of a pipe is related by the work-energy principle, where the work done by the fluid is equal to the change in its mechanical energy.",
+      "extracted_answer": "0",
       "is_correct": false,
       "subject": "Physics",
-      "response_length": 792
+      "response_length": 9395
     }
   ]
 }

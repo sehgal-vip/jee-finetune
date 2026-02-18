@@ -231,6 +231,23 @@ def evaluate_model(
             if is_correct:
                 results["by_type"][q_type]["correct"] += 1
 
+        # Print running accuracy summary
+        total_so_far = results["total"]
+        correct_so_far = results["correct"]
+        pct = correct_so_far / total_so_far * 100
+        status = "CORRECT" if is_correct else "WRONG  "
+        subj_parts = []
+        for s, st in sorted(results["by_subject"].items()):
+            # Use abbreviated subject names (first 4 chars)
+            abbr = s[:4]
+            subj_parts.append(f"{abbr}: {st['correct']}/{st['total']}")
+        print(
+            f"[{total_so_far:>3}/{len(eval_data)}] {status}  {subject:<12s}"
+            f" | Overall: {correct_so_far}/{total_so_far} ({pct:.1f}%)"
+            f" | {' '.join(subj_parts)}",
+            flush=True,
+        )
+
         results["details"].append({
             "question": question[:200],
             "ground_truth": ground_truth,
